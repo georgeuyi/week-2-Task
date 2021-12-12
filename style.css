@@ -1,0 +1,180 @@
+
+
+body {
+  font-family: 'Red Hat Display', 
+  sans-serif;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: contain;
+  background-color: black;
+  position: relative;
+  font-size: 16px;
+}
+
+.form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 400px;
+  height:400px;
+  border-left-width: 50px;
+
+}
+
+h1{
+  margin-top: 5px;
+  margin-left: 100px;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+#username {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: thin;
+  outline:none;
+  padding-bottom: 10px;
+  width: 300px;
+  margin-left: 40px;
+}
+
+.email {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline:none;
+  border-bottom-width: thin;
+  padding-bottom: 10px;
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.date {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.time{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.month {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline:none;
+  padding-bottom: 10px;
+  width: 50px;
+  border-bottom-width: thin;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.days{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline:none;
+  border-bottom-width: thin;
+  padding-bottom: 10px;
+  width: 50px;
+  text-align: center;
+}
+.year{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline:none;
+  border-bottom-width: thin;
+  padding-bottom: 10px;
+  width: 50px;
+  text-align: center;
+}
+
+.hours {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline:none;
+  border-bottom-width: thin;
+  padding-bottom: 10px;
+  width: 50px;
+  margin-left: 50px;
+  text-align: center;
+}
+.minutes {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline:none;
+  padding-bottom: 10px;
+  width: 50px;
+  border-bottom-width: thin;
+  text-align: center;
+}
+#when {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  padding-bottom: 10px;
+  width: 50px;
+  text-align: center;
+  }
+ 
+  a.reservation-btn{
+  text-decoration: none;
+color: white;
+background-color: black;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 115px;
+margin-left: 35px;
+margin-right: 40px;
+margin-top: 20px;
+display: block;
+}
+
+.container{
+  display: flex;
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 350px;
+  
+
+}
+
+.input-box{
+  height: 40px;
+  width: 335px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 15px;
+  margin-left: -100px;
+}
+
+button{
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-bottom: black;
+}
+
+p{
+  padding: 5px 10px;
+}
+

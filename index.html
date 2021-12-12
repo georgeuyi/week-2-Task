@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form">
+    <h1>Reservation Form</h1>
+    <input type="text"  value=Name name="username" id="username" required><br><br>
+    <input type="email" value=Email name="email" class="email" required><br><br>
+  <div class="date">
+    Pick a date
+  <input type="" value=  MM  class="month" required>
+  <input type="" value=  DD  class="days" required>
+  <input type="" value=  YYYY  class="year" required><br><br>
+  </div>
+  <div class="time">
+  Pick a time
+    <input type="" value=  00  class="hours" required>
+    <input type="" value=  00 class="minutes" required>
+    <select id="when">
+      <option value="month">AM</option>
+      <option value="AM">PM</option>
+    </select><br><br>
+  </div>
+    <div class="container">
+      <div class="input-box">
+        <button type="button" onclick="minus()" style="font-size: 20px;">-</button>
+        <p id="counter">0</p>
+        <h3>Person(s)</h3>
+        <button type="button" onclick="plus()">+</button>
+      </div>
+    </div>
+    <div class ="reservation">
+    <a href="#" class="reservation-btn">Make Reservation</a>
+  </div>
+<script>
+ var counter = 0;
+
+function plus() {
+  counter += 1;
+  document.getElementById("counter").innerHTML = counter;
+}
+
+function minus() {
+  if(counter > 0){
+    counter -= 1;
+  }
+  document.getElementById("counter").innerHTML = counter;
+}
+  </script>
+  </body>
+</body>
+</html>
