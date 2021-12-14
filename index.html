@@ -10,28 +10,29 @@
 <body>
   <div class="form">
     <h1>Reservation Form</h1>
-    <input type="text"  value=Name name="username" id="username" required><br><br>
-    <input type="email" value=Email name="email" class="email" required><br><br>
-  <div class="date">
+    <input type="" name="username" id="username" placeholder= "Name" required><br><br>
+    <input type="" name="email" class="email" placeholder= "Email" required><br><br>
+  
+    <div class="date">
     Pick a date
-  <input type="" value=  MM  class="month" required>
-  <input type="" value=  DD  class="days" required>
-  <input type="" value=  YYYY  class="year" required><br><br>
+  <input type="" class="month" placeholder= "MM" required>
+  <input type= ""class="days" placeholder= "DD" required>
+  <input type= "" class="year" placeholder= "YYYY" required><br><br>
   </div>
   <div class="time">
   Pick a time
-    <input type="" value=  00  class="hours" required>
-    <input type="" value=  00 class="minutes" required>
+    <input type="" class="hours" placeholder= "00" required>
+    <input type="" class="minutes" placeholder= "00" required>
     <select id="when">
-      <option value="month">AM</option>
-      <option value="AM">PM</option>
+      <option value="AM">AM</option>
+      <option value="PM">PM</option>
     </select><br><br>
   </div>
     <div class="container">
       <div class="input-box">
         <button type="button" onclick="minus()" style="font-size: 20px;">-</button>
         <p id="counter">0</p>
-        <h3>Person(s)</h3>
+        <h3 class="personData">person</h3>
         <button type="button" onclick="plus()">+</button>
       </div>
     </div>
@@ -39,20 +40,39 @@
     <a href="#" class="reservation-btn">Make Reservation</a>
   </div>
 <script>
- var counter = 0;
+  let increaseCount = document.querySelector("#counter");
+  let personText = document.querySelector(".personData");
+  let defaultText = "person";
+  let newText = "people";
 
-function plus() {
-  counter += 1;
-  document.getElementById("counter").innerHTML = counter;
-}
+  let count = 0;
 
-function minus() {
-  if(counter > 0){
-    counter -= 1;
+  function plus() {
+    count = count + 1;
+    increaseCount.textContent = count;
+
+    if (count >= 2) {
+      personText.textContent = newText;
+    } else if (count < 2) {
+      personText.textContent = defaultText;
+    } else {
+      personText.textContent = defaultText;
+    }
   }
-  document.getElementById("counter").innerHTML = counter;
-}
-  </script>
+
+  function minus() {
+    if (count > 0) {
+      count = count - 1;
+    increaseCount.textContent = count;
+    }
+
+    if(count === 2){
+      newText.textContent = newText;
+    } else if (count <= 1) {
+      personText.textContent = defaultText;
+    }
+  }
+</script>
   </body>
 </body>
 </html>
